@@ -1,4 +1,4 @@
-module github.com/eryajf/eryajfctl
+module github.com/hengeek/tengxun-bill-cli
 
 go 1.22
 

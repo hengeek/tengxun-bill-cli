@@ -1,10 +1,10 @@
 <div align="center">
-<h1>eryajfctl</h1>
+<h1>tengxun-bill-cli</h1>
 
 [![Auth](https://img.shields.io/badge/Auth-eryajf-ff69b4)](https://github.com/eryajf)
-[![GitHub Pull Requests](https://img.shields.io/github/stars/eryajf/eryajfctl)](https://github.com/eryajf/eryajfctl/stargazers)
-[![HitCount](https://views.whatilearened.today/views/github/eryajf/eryajfctl.svg)](https://github.com/eryajf/eryajfctl)
-[![GitHub license](https://img.shields.io/github/license/eryajf/eryajfctl)](https://github.com/eryajf/eryajfctl/blob/main/LICENSE)
+[![GitHub Pull Requests](https://img.shields.io/github/stars/hengeek/tengxun-bill-cli)](https://github.com/hengeek/tengxun-bill-cli/stargazers)
+[![HitCount](https://views.whatilearened.today/views/github/hengeek/tengxun-bill-cli.svg)](https://github.com/hengeek/tengxun-bill-cli)
+[![GitHub license](https://img.shields.io/github/license/hengeek/tengxun-bill-cli)](https://github.com/hengeek/tengxun-bill-cli/blob/main/LICENSE)
 [![](https://img.shields.io/badge/Awesome-MyStarList-c780fa?logo=Awesome-Lists)](https://github.com/eryajf/awesome-stars-eryajf#readme)
 
 <p> 🌉 基于Cobra库快速开发类似kubectl一样的命令行工具框架 🌉</p>
@@ -27,10 +27,10 @@ cp config.example.yml config.yml
 执行如下指令，运行示例参数：
 
 ```sh
-$ go run main.go ex getconfig -w "hello, This is eryajfctl"
+$ go run main.go ex getconfig -w "hello, This is tengxun-bill-cli"
 通过配置文件获取到的用户名: eryajf
 通过配置文件获取到的密码: 123456
-通过命令行获取到的内容是: hello, This is eryajfctl
+通过命令行获取到的内容是: hello, This is tengxun-bill-cli
 ```
 
 > 其中ex为一级参数，getconfig为二级参数，大多数场景下，分两个层级就够用了，你可以把一级参数当做归类，比如 jenkins, gitlab，二级参数当做功能参数，再往后的参数则是该二级参数所需要的运行时参数。
@@ -42,11 +42,11 @@ $ go run main.go ex getconfig -w "hello, This is eryajfctl"
 $ make build
 
 #运行测试
-$ ./eryajfctl ex getconfig -h
+$ ./tengxun-bill-cli ex getconfig -h
 通过命令行获取配置信息
 
 Usage:
-  eryajfctl ex getconfig [flags]
+  tengxun-bill-cli ex getconfig [flags]
 
 Flags:
   -h, --help          help for getconfig
@@ -63,7 +63,7 @@ Flags:
 go-bindata -o=./public/bindata_config.go -pkg=public config.yml
 ```
 
-然后更改 [public/config.go](https://github.com/eryajf/eryajfctl/blob/4cd30714062e5b65746bdb5f100f19bfe38ed52e/public/config.go#L28) 中的配置信息读取方式，接着进入开发即可。
+然后更改 [public/config.go](https://github.com/hengeek/tengxun-bill-cli/blob/4cd30714062e5b65746bdb5f100f19bfe38ed52e/public/config.go#L28) 中的配置信息读取方式，接着进入开发即可。
 
 如果后续本地的config.yml配置有更新，则再次执行上边的命令，将配置文件注入到 `bindata_config.go` 即可。
 
@@ -74,10 +74,10 @@ go-bindata -o=./public/bindata_config.go -pkg=public config.yml
 执行如下命令，会自动生成该工具的文档，且生成子命令的文档。
 
 ```
-$ ./eryajfctl --md-docs
+$ ./tengxun-bill-cli --md-docs
 ```
 
-在这里你可以看到所有的文档：[点我查看](./docs/eryajfctl.md)
+在这里你可以看到所有的文档：[点我查看](./docs/tengxun-bill-cli.md)
 
 ## 感谢开源
 

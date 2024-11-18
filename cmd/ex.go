@@ -16,14 +16,14 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/eryajf/eryajfctl/api/ex"
+	"github.com/hengeek/tengxun-bill-cli/api/ex"
 	"github.com/spf13/cobra"
 )
 
 // exCmd represents the jenkins command
 var exCmd = &cobra.Command{
 	Use:   "ex",
-	Short: `这是一个示例,你可以参考帮助信息使用,见: https://github.com/eryajf/eryajfctl/blob/main/README.md`,
+	Short: `这是一个示例,你可以参考帮助信息使用,见: https://github.com/hengeek/tengxun-bill-cli/blob/main/README.md`,
 }
 
 func init() {

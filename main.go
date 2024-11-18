@@ -16,8 +16,8 @@ limitations under the License.
 package main
 
 import (
-	"github.com/eryajf/eryajfctl/cmd"
-	"github.com/eryajf/eryajfctl/public"
+	"github.com/hengeek/tengxun-bill-cli/cmd"
+	"github.com/hengeek/tengxun-bill-cli/public"
 )
 
 func init() {

@@ -9,7 +9,7 @@
 .token
 
 logs
-eryajfctl
+tengxun-bill-cli
 config.yml
 
 # Test binary, built with `go test -c`

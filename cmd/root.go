@@ -27,7 +27,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "eryajfctl",
+	Use:   "tengxun-bill-cli",
 	Short: "eryajf goscript",
 	Long:  `利用cobra制作运维日常工具箱的框架。`,
 	// Uncomment the following line if your bare application
